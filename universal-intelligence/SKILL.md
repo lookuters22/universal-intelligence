@@ -2,7 +2,7 @@
 
 name: universal-intelligence
 
-description: "Universal Intelligence method: cliff-jump into the ocean-of-wrong passes, engineer-style review without premature fixes, quarry/pivot toward results the correct road rarely reaches—all domain-agnostic, inspectable teaching, human control—not black-box autopilot mediocrity."
+description: "Universal Intelligence method for product brainstorming, unsaturated market discovery, market-gap research, startup/product ideas, and wrong-road creative/problem-solving work: research current markets, doubt findings through an evidence refusal layer, rerun counter-search, then use forest/friction/pivot/refinement to produce inspectable, high-conviction ideas."
 
 license: MIT
 
@@ -10,7 +10,7 @@ metadata:
 
   author: User
 
-  version: '1.3.0'
+  version: '1.5.0'
 
 ---
 
@@ -120,6 +120,22 @@ Universal application: brainstorming, diagnostics, dispute resolution sketches, 
 
 
 
+### Product / market gap mode
+
+
+
+When the user asks for product ideas, startup ideas, business opportunities, market gaps, unsaturated markets, monetizable wedges, competitor avoidance, or "ideas that can win," run `references/market-gap-research.md` and `references/refusal-layer.md` before the four-phase UI loop.
+
+
+
+This is a **pre-flight evidence loop**, not a shortcut to a final answer. Research current alternatives, map saturation, form gap hypotheses, then actively try to kill those hypotheses with counter-search. Route nothing forward until the refusal layer classifies the candidate as `ROUTE`. Repeat until one candidate survives as high-conviction and testable, or until evidence proves the market/path is too saturated or weak and the loop must restart around a sharper segment.
+
+
+
+Do **not** claim literal 100% certainty. Interpret requests for a "100% good idea" as a demand for a genuinely useful, evidence-backed, low-delusion idea with a named riskiest assumption, kill criteria, and first validation probe.
+
+
+
 ## Core workflow — strict sequence
 
 
@@ -149,6 +165,10 @@ Restart from Step 1 if **The Relapse Test** fails.
 ### Step summary
 
 
+
+0. **Market Gap Loop** *(only for product / market / business ideation)*: current research, saturation map, adversarial doubt pass, and survivor ledger (`references/market-gap-research.md`).
+
+0.5. **Evidence Refusal Layer** *(only for product / market / business ideation)*: refuse, narrow, or rerun weak findings before they can feed Step 1 (`references/refusal-layer.md`).
 
 1. **The Forest of Wrong**: Dogma mapping then 4–5 **Garbage Exploratories** / load-bearing passes (`references/the-forest-of-wrong.md`).
 
@@ -265,6 +285,10 @@ Articulate why orthodox roadmap probably never reaches same signature—earn bol
 
 
 - `references/the-forest-of-wrong.md`
+
+- `references/market-gap-research.md` when product, startup, market, monetization, competitor, or unsaturated-opportunity research is in scope.
+
+- `references/refusal-layer.md` after market-gap research and before routing product candidates into Step 1.
 
 - `references/friction-analysis.md`
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Universal Intelligence"
-  short_description: "Wrong-road ideation and pivot method"
-  default_prompt: "Use $universal-intelligence to rethink this problem through wrong-road exploration, friction analysis, a singular pivot, and a refined actionable result."
+  short_description: "Market-gap refusal and wrong-road pivot method"
+  default_prompt: "Use $universal-intelligence to research market gaps, refuse weak findings, then rethink the surviving idea through wrong-road exploration, friction analysis, a singular pivot, and a refined actionable result."
