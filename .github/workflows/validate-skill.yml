@@ -1,0 +1,55 @@
+name: Validate Codex Skill
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate skill structure
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          skill = Path("universal-intelligence")
+          skill_md = skill / "SKILL.md"
+          refs = skill / "references"
+
+          if not skill_md.exists():
+              sys.exit("missing universal-intelligence/SKILL.md")
+          if not refs.is_dir():
+              sys.exit("missing universal-intelligence/references/")
+
+          text = skill_md.read_text(encoding="utf-8")
+          match = re.match(r"^---\s*\n(.*?)\n---", text, re.S)
+          if not match:
+              sys.exit("SKILL.md must start with YAML frontmatter")
+
+          frontmatter = match.group(1)
+          if not re.search(r"^name:\s*universal-intelligence\s*$", frontmatter, re.M):
+              sys.exit("frontmatter name must be universal-intelligence")
+          if not re.search(r"^description:\s*.+", frontmatter, re.M):
+              sys.exit("frontmatter description is required")
+
+          required_refs = {
+              "anti-patterns.md",
+              "friction-analysis.md",
+              "refinement-heuristics.md",
+              "required-checks.md",
+              "the-forest-of-wrong.md",
+              "the-pivot.md",
+          }
+          missing = sorted(name for name in required_refs if not (refs / name).exists())
+          if missing:
+              sys.exit(f"missing reference files: {', '.join(missing)}")
+
+          print("Skill structure looks good.")
+          PY
