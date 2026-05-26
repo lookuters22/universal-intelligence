@@ -276,7 +276,51 @@ Articulate why orthodox roadmap probably never reaches same signature—earn bol
 
 
 
-`references/required-checks.md`.
+Run `references/required-checks.md` before the final answer for every full Universal Intelligence run. Keep it internal unless the user asks to see the audit.
+
+
+
+## Reference loading map
+
+
+
+Use this map so every reference file has an explicit invocation path.
+
+
+
+### Always load for a full UI run
+
+
+
+- `references/the-forest-of-wrong.md` for Step 1.
+
+- `references/friction-analysis.md` for Step 2.
+
+- `references/the-pivot.md` for Step 3.
+
+- `references/refinement-heuristics.md` for Step 4.
+
+- `references/required-checks.md` before final output.
+
+
+
+### Load only for product / market / business ideation
+
+
+
+- `references/market-gap-research.md` before Step 1 when the request includes products, startups, markets, niches, monetization, business ideas, competitors, market gaps, demand, saturation, distribution, pricing, or "what should we build?"
+
+- `references/refusal-layer.md` after market-gap research and before Step 1. Only a `ROUTE` decision may feed the surviving candidate into The Forest of Wrong.
+
+
+
+### Conditional quality guard
+
+
+
+- `references/anti-patterns.md` when the output starts becoming generic, over-sanitized, chaotic without grain, spectacle-first, black-boxed, or too close to ordinary best-practice advice.
+
+- Also scan `references/anti-patterns.md` if the Relapse Test feels close to failing.
 
 
 
